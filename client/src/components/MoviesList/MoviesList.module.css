@@ -1,0 +1,11 @@
+.moviesList {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 700px) {
+  .moviesList {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,15 @@
+.search {
+  height: 3rem;
+  width: 100%;
+  max-width: 300px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1em rgba(255, 255, 255, 0.315);
+  padding: 0 0.5rem;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.search:focus {
+  outline: none;
+}
