@@ -73,7 +73,6 @@ const App = () => {
         movie={selectedMovie}
         selectMovie={selectMovie}
       />
-
       <header>
         <div className="container flex-row">
           <Search searchValue={searchValue} setSearchValue={setSearchValue} />

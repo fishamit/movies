@@ -4,11 +4,6 @@
 
 body {
   margin: 0;
-  /* background: linear-gradient(
-    180deg,
-    rgba(37, 32, 83, 1) 0%,
-    rgba(120, 18, 99, 1) 100%
-  ); */
   background-color: rgb(235, 235, 235);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -75,7 +70,6 @@ pre {
 header {
   padding: 2em 0;
   background-color: rgb(41, 41, 41);
-  /* background-color: rgba(0, 0, 0, 0.295); */
 }
 
 section {
