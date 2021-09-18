@@ -2,6 +2,7 @@ import React from 'react';
 import style from './Movie.module.css';
 
 const Movie = ({ movie, selectMovie }) => {
+  //Return appropriate color for IMDB score background.
   const getScoreColor = score => {
     return score >= 5 ? (score >= 8 ? 'limegreen' : 'orange') : 'tomato';
   };

@@ -32,8 +32,8 @@ const App = () => {
         setMovies(response.data.results);
         setError('');
       } catch (error) {
-        setError('Error fetching data.');
         setLoading(false);
+        setError('Error fetching data.');
       }
     }, 1000);
     return () => {
@@ -47,6 +47,7 @@ const App = () => {
     setShowModal(!!selectedMovie);
   }, [selectedMovie]);
 
+  //Get 10 initial movies from server
   const getTenMovies = async () => {
     try {
       setLoading(true);
@@ -55,10 +56,12 @@ const App = () => {
       setMovies(response.data?.tenMovies);
       setError('');
     } catch (error) {
+      setLoading(false);
       setError('Error fetching data.');
     }
   };
 
+  //Update selected movie in state - used by the modal effect hook.
   const selectMovie = imdbID => {
     if (!imdbID) return setSelectedMovie(null);
     movies.forEach(movie => {
@@ -73,7 +76,6 @@ const App = () => {
         movie={selectedMovie}
         selectMovie={selectMovie}
       />
-
       <header>
         <div className="container flex-row">
           <Search searchValue={searchValue} setSearchValue={setSearchValue} />

@@ -1,4 +1,8 @@
-// /api route
+/*
+API Routes
+-GET /tenmovies: returns 10 movies for initial page load.
+-GET /searchmovie: returns movie searched by title.
+*/
 
 const router = require('express').Router();
 const axios = require('axios');
